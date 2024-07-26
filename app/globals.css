@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #fb6a19;
+    --secondary-color: #0b2c3d;
+    --sub-heading-color: #5c727d;
+    --light-grey-bg: #f6f6f6;
+    --border-color: #dbe8fb;
+    --light-blue-bg: #f1f7fb;
+    --footer-bg: #101010;
+
+    --radius: "10px";
+  }
+}
+
+@layer base {
+  body {
+    @apply text-base leading-6 font-poppins overflow-x-hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold font-rokkitt leading-6 block;
+  }
+  h1 {
+    @apply text-[66px] max-md:text-6xl;
+  }
+  h2 {
+    @apply text-[50px] max-md:text-[40px];
+  }
+  h3 {
+    @apply text-[32px] max-md:text-[28px];
+  }
+  h4 {
+    @apply text-[26px];
+  }
+  h5 {
+    @apply text-[20px];
+  }
+  h6 {
+    @apply text-[18px];
+  }
+  .square-dot-list {
+    @apply text-base font-medium font-poppins text-secondary relative pl-5 before:absolute before:content-[''] before:top-[7px] before:left-0 before:h-[8px] before:w-[8px] before:bg-primary mb-2;
+  }
+}
+
+@layer utilities {
+}
